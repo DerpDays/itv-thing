@@ -1,0 +1,95 @@
+.loader {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999999;
+		background-color: #fff;
+}
+.images {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+/* .loadingGif {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   width: 500px;
+   height: 500px;
+   margin-top: -250px;
+   margin-left: -250px;
+} */
+
+
+.padding {
+	padding: 10px;
+}
+
+
+.button {
+		position: relative;
+		color: #fff;
+		background: #131313;
+    padding: 1em;
+		letter-spacing: 0.35em;
+		font-size: 0.7em;
+		transition: background-color 0.3s, box-shadow 0.3s, color 0.3s;
+		margin: 1em;
+		border: none;
+		border-radius: 5px;
+}
+
+.grid-buttons{
+  width: 12.5em;
+  height: 4em;
+}
+.large-buttons{
+  width: 27.5em;
+  height: 4em;
+}
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.color-1 {
+  color: #00BECA;
+}
+.color-2 {
+  color: #000000;
+}
+.color-3 {
+  color: #8C7B11;
+}
+.color-4 {
+  color: #C80063;
+}
+.color-5 {
+  color: #FFAB00;
+}
+
+.bg-1 {
+  background-color: #00BECA;
+}
+.bg-2 {
+  background-color: #000000;
+}
+.bg-3 {
+  background-color: #8C7B11;
+}
+.bg-4 {
+  background-color: #C80063;
+}
+.bg-5 {
+  background-color: #FFAB00;
+}
