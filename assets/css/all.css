@@ -82,3 +82,15 @@
 .bg-5 {
   background-color: #FFAB00;
 }
+
+
+.logo {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+	transform: translateX(-50%);
+	left: 50%;
+	position: absolute;
+}
