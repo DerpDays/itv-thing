@@ -6,30 +6,66 @@
     <div id="stylesheets">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="https://raw.githack.com/DerpDays/itv-thing/master/assets/css/social.css">
+      <link rel="stylesheet" type="text/css" href="https://raw.githack.com/DerpDays/itv-thing/master/assets/css/itv-hub.css">
       <link rel="stylesheet" type="text/css" href="https://raw.githack.com/DerpDays/itv-thing/master/assets/css/all.css">
+      <link rel="stylesheet" type="text/css" href="../css/itv-hub.css">
     </div>
 		<title>ITV Hub | ITV Interactive</title>
   </head>
   <body>
 
     <div class="padding"></div>
-    <div class="container">
+    <div class="container-fluid">
       <div class="fade-in">
         <div class="row align-items-center justify-content-center">
-          <a href="index.html"><button type="button " class="button first-buttons">RETURN HOME</button></a>
+          <div class="show-container">
+            <div class="shows fade-in">
+              <img class="slideShowImages" src="https://www.itvmedia.co.uk/files/cache/3f73ff034bac12960a8641904cd501a4_f4154.jpg">
+              <div class="row align-items-center justify-content-center description">Emmerdale</div>
+            </div>
+
+            <div class="shows fade-in">
+              <img class="slideShowImages" src="https://www.itvmedia.co.uk/files/cache/002da4840e73192308877310ccfd9bd4_f4156.jpg">
+              <div class="row align-items-center justify-content-center description">Cornation Street</div>
+            </div>
+            <div class="shows fade-in">
+              <img class="slideShowImages" src="https://www.itvmedia.co.uk/files/cache/4839d7e6ac2e8ffb1f169bbfb56d204f_f4289.jpg">
+              <div class="row align-items-center justify-content-center description">X-Factor</div>
+            </div>
+            <div class="shows fade-in">
+              <img class="slideShowImages" src="https://www.itvmedia.co.uk/files/cache/47c7d40649efc16e85c48e7f131d333b_f4152.jpg">
+              <div class="row align-items-center justify-content-center description">I'm A Celebrity</div>
+            </div>
+            <div class="shows fade-in">
+              <img class="slideShowImages" src="https://www.itvmedia.co.uk/files/cache/c4a5cd26f50dbade7f96c98ea23d76ab_f5020.jpg">
+              <div class="row align-items-center justify-content-center description">Britain's Got Talent</div>
+            </div>
+            <a class="prev" onclick="plusSlides(1)" style="color: #fff">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)" style="color: #fff">&#10095;</a>
+          </div>
+          <br>
         </div>
         <div class="row align-items-center justify-content-center">
-          <iframe sandbox="allow-same-origin allow-forms allow-scripts" src="https://www.itv.com/hub/itv"></iframe>
+          <div style="text-align:center">
+            <span class="slideIndicator bg-1" onclick="currentSlide(1)"></span>
+            <span class="slideIndicator bg-2" onclick="currentSlide(2)"></span>
+            <span class="slideIndicator bg-3" onclick="currentSlide(3)"></span>
+            <span class="slideIndicator bg-4" onclick="currentSlide(4)"></span>
+            <span class="slideIndicator bg-5" onclick="currentSlide(5)"></span>
+          </div>
         </div>
       </div>
     </div>
+    <div class="fade-in">
+      <a href="./index.html"><button type="button" class="returnButton">RETURN HOME</button></a>
+    </div class="fade-in">
 
 
     <div id="scripts">
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script src="../js/itv-hub.js"></script>
     </div>
 	</body>
 </html>

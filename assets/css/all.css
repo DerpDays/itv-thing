@@ -98,5 +98,19 @@
 .sticky {
   position: fixed;
   bottom: 0;
-  width: 100%
+}
+
+.returnButton {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  text-align:center;
+  color: #fff;
+  background: #131313;
+  padding: 1em;
+  letter-spacing: 0.35em;
+  font-size: 0.7em;
+  border: none;
+  width: 100%;
+  height: 5em;
 }
