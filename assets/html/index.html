@@ -15,21 +15,24 @@
 
     <div class="padding"></div>
     <div class="container-fluid">
-      <div class="fade-in">
-        <div class="logo"><img src="https://raw.githack.com/DerpDays/itv-thing/master/assets/img/logo.png" width="200" height="200" draggable="false"></div>
-        <div class="vertical-center">
-          <div class="row align-items-center justify-content-center">
-            <a href="https://raw.githack.com/DerpDays/itv-thing/master/assets/html/social.html"><button type="button" class="button grid-buttons bg-1">SOCIAL</button></a>
-            <a href="https://raw.githack.com/DerpDays/itv-thing/master/assets/html/itv-hub.html"><button type="button" class="button grid-buttons bg-2">ITV HUB</button></a>
-          </div>
-          <div class="row align-items-center justify-content-center">
-            <a href="https://raw.githack.com/DerpDays/itv-thing/master/assets/html/news.html"><button type="button" class="button grid-buttons bg-3">NEWS</button></a>
-            <a href="https://raw.githack.com/DerpDays/itv-thing/master/assets/html/ask-apply.html"><button type="button" class="button grid-buttons bg-4">ASK & APPLY</button></a>
-          </div>
-          <div class="row align-items-center justify-content-center">
-            <a href="https://raw.githack.com/DerpDays/itv-thing/master/assets/html/apprentice-hub.html"><button type="button" class="button large-buttons bg-5">APPRENTICE HUB</button></a>
-          </div>
+      <div class="logo"><img src="https://raw.githack.com/DerpDays/itv-thing/master/assets/img/logo.png" width="200" height="200" draggable="false"></div>
+      <div class="vertical-center">
+        <div class="row align-items-center justify-content-center">
+          <a href="https://raw.githack.com/DerpDays/itv-thing/master/assets/html/social.html"><button type="button" class="button grid-buttons bg-1">SOCIAL</button></a>
+          <a href="https://raw.githack.com/DerpDays/itv-thing/master/assets/html/itv-hub.html"><button type="button" class="button grid-buttons bg-2">ITV HUB</button></a>
         </div>
+        <div class="row align-items-center justify-content-center">
+          <a href="https://raw.githack.com/DerpDays/itv-thing/master/assets/html/news.html"><button type="button" class="button grid-buttons bg-3">NEWS</button></a>
+          <a href="https://raw.githack.com/DerpDays/itv-thing/master/assets/html/ask-apply.html"><button type="button" class="button grid-buttons bg-4">ASK & APPLY</button></a>
+        </div>
+        <div class="row align-items-center justify-content-center">
+          <a href="https://raw.githack.com/DerpDays/itv-thing/master/assets/html/apprentice-hub.html"><button type="button" class="button large-buttons bg-5">APPRENTICE HUB</button></a>
+        </div>
+      </div>
+    </div>
+    <div class="loader">
+      <div class="vertical-center">
+        <img src="https://raw.githack.com/DerpDays/itv-thing/master/assets/img/loading.gif" width="450" height="450" draggable="false">
       </div>
     </div>
 
@@ -38,6 +41,19 @@
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script>
+        (function($){
+          'use strict';
+            $(window).on('load', function () {
+              setTimeout(function() {
+                if ($(".loader").length > 0)
+                {
+                    $(".loader").fadeOut("slow");
+                }
+              }, 1000);
+            });
+        })(jQuery)
+      </script>
     </div>
 	</body>
 </html>

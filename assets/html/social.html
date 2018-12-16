@@ -15,22 +15,36 @@
 
     <div class="padding"></div>
     <div class="container">
-      <div class="fade-in">
-        <div class="row align-items-center justify-content-center">
-          <a class="twitter-timeline" href="https://twitter.com/ITV?ref_src=twsrc%5Etfw">Tweets by ITV</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-        </div>
+      <div class="row align-items-center justify-content-center">
+        <a class="twitter-timeline" href="https://twitter.com/ITV?ref_src=twsrc%5Etfw">Tweets by ITV</a>
+        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
-    <div class="fade-in">
-      <a href="./index.html"><button type="button" class="returnButton">RETURN HOME</button></a>
-    </div class="fade-in">
+    <a href="./index.html"><button type="button" class="returnButton">RETURN HOME</button></a>
+    <div class="loader">
+      <div class="vertical-center">
+        <img src="https://raw.githack.com/DerpDays/itv-thing/master/assets/img/loading.gif" width="450" height="450" draggable="false">
+      </div>
+    </div>
 
 
     <div id="scripts">
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script>
+        (function($){
+          'use strict';
+            $(window).on('load', function () {
+              setTimeout(function() {
+                if ($(".loader").length > 0)
+                {
+                    $(".loader").fadeOut("slow");
+                }
+              }, 1000);
+            });
+        })(jQuery)
+      </script>
     </div>
 	</body>
 </html>
