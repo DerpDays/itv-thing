@@ -93,3 +93,10 @@
 	left: 50%;
 	position: absolute;
 }
+
+
+.sticky {
+  position: fixed;
+  bottom: 0;
+  width: 100%
+}
