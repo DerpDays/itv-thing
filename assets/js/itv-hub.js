@@ -27,5 +27,5 @@ function currentSlide(n) {
 showSlides();
 function showSlides() {
     plusSlides(1);
-    setTimeout(showSlides, 2500);
+    setTimeout(showSlides, 5000);
 }
